@@ -9,14 +9,36 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@expo-google-fonts/karla": "^0.2.3",
+    "@gluestack-style/react": "^1.0.57",
+    "@gluestack-ui/config": "^1.1.20",
+    "@gluestack-ui/themed": "^1.1.65",
+    "@gorhom/bottom-sheet": "^5.0.6",
+    "@react-native-async-storage/async-storage": "1.23.1",
+    "@react-navigation/bottom-tabs": "^7.2.0",
+    "@react-navigation/native": "^7.0.14",
+    "@react-navigation/native-stack": "^7.2.0",
+    "axios": "^1.7.9",
     "expo": "~52.0.27",
+    "expo-file-system": "~18.0.7",
+    "expo-font": "~13.0.3",
+    "expo-image-picker": "~16.0.4",
     "expo-status-bar": "~2.0.1",
+    "phosphor-react-native": "^2.2.3",
     "react": "18.3.1",
-    "react-native": "0.76.6"
+    "react-native": "0.76.6",
+    "react-native-gesture-handler": "~2.20.2",
+    "react-native-reanimated": "~3.16.1",
+    "react-native-safe-area-context": "4.12.0",
+    "react-native-screens": "~4.4.0",
+    "react-native-svg": "15.8.0",
+    "react-native-svg-transformer": "^1.5.0",
+    "yup": "^1.6.1"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@types/react": "~18.3.12",
+    "react-dom": "^19.0.0",
     "typescript": "^5.3.3"
   },
   "private": true
