@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { ScrollView } from "react-native";
 import { Center, Image, Text, VStack } from "@gluestack-ui/themed";
+import { useNavigation } from "@react-navigation/native";
+
+import { AuthNavigatorRoutesPros } from "@routes/auth.routes";
 
 import Logo from "@assets/logo.png";
 import Title from "@assets/title.png";
@@ -11,8 +14,14 @@ import { Button } from "@components/Button";
 export function SignIn() {
   const [isVisiblePassword, setIsVisiblePassword] = useState(false);
 
+  const navigation = useNavigation<AuthNavigatorRoutesPros>();
+
   function handlePasswordVisibility() {
     setIsVisiblePassword(!isVisiblePassword);
+  }
+
+  function handleNewAccount() {
+    navigation.navigate("signUp");
   }
 
   return (
@@ -41,9 +50,10 @@ export function SignIn() {
           <Input
             placeholder="Senha"
             type="password"
-            onSubmitEditing={() => {}}
+            returnKeyType="send"
             isVisiblePassword={isVisiblePassword}
             handleIcon={handlePasswordVisibility}
+            onSubmitEditing={() => {}}
           />
 
           <Button
@@ -62,7 +72,7 @@ export function SignIn() {
             title="Criar uma conta"
             variant="gray"
             mt="$4"
-            onPress={() => console.log("Button Criar uma conta clicado")}
+            onPress={handleNewAccount}
           />
         </Center>
       </VStack>

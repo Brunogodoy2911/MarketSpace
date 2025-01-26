@@ -68,7 +68,7 @@ export const Icon = createStyle({
     //@ts-ignore
     fill: 'none',
   },
-  color: '$backgroundLight800',
+  color: '$gray600',
   _dark: {
     //@ts-ignore
     color: '$backgroundDark400',
